@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Mulish&family=Rampart+One&display=swap"
+        rel="stylesheet">
+    <!-- <script type="module" src='app.js'></script> -->
+    <script src='app.js' defer></script>
+    <title>Hotel Form</title>
+</head>
+
+<body>
+    <!-- <h1>Hotel Booking Form</h1> -->
+
+    <!-- Updated HTML from Florin Pop's youtube video - he had icons from some outside resource -->
+    <div class="container">
+        <div id="backButtonContainer">
+            <button type="button" id="backButton">< Go Back</button>
+        </div>
+
+        <div id="roomSelected"></div>
+
+        
+            <div class="header">
+                <h2>Guest Information</h2>
+            </div>
+           
+            <form id="guestInformationForm" class="form">
+            <div id="halfOne">
+                <div class="form-control">
+                    <label for="fName">First Name</label>
+                    <input type="text" placeholder="John" id="fName" />
+                    <!-- <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i> -->
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="lName">Last Name</label>
+                    <input type="text" placeholder="Smith" id="lName" />
+                    <!-- <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i> -->
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="john@smith.com" id="email" />
+                    <!-- <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i> -->
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="phone">Phone</label>
+                    <input type="tel" placeholder="(XXX) XXX-XXXX" id="phone" />
+                    <!-- <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i> -->
+                    <small>Error message</small>
+                </div>
+            </div>
+ 
+        <div id="halfTwo">
+            <div class="form-control">
+                <label for="address">Address</label>
+                <input type="text" placeholder="" id="address" />
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> -->
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="address-two">Address 2 <em>(Optional)</em></label>
+                <input type="text" placeholder="" id="address-two" />
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> -->
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="zip">Zip</label>
+                <input type="text" placeholder="" id="zip" />
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> -->
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="city">City</label>
+                <input type="text" placeholder="" id="city" />
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> -->
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <select name="state" id="state">State
+                <option id="stateOption">Select State</option>
+                </select>
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> -->
+                <small id='errorState'>Error message</small>
+            </div>
+            <button>Submit</button>
+            </div>
+        </form>
+
+        
+       
+            
+    </div>
+
+
+    <!-- PREVIOUS HTML for first attempt -->
+
+    <!-- <div id="container">
+
+        <h2>Guest Information</h2>
+
+        <div id="errorMessage"></div>
+
+        <form id="guestInformation" action="/" method="GET">
+            <div>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+            </div>
+            
+            <div>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+            </div>
+            
+            <div>
+                <label for="fname">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+            </div> -->
+        
+
+            <!-- <label for="lname">Phone:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="fname">Country/Region:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Address:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="fname">Address 2:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Zip:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="fname">City:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">State:</label><br>
+            <input type="text" id="lname" name="lname"><br> -->
+            <!-- <button type="submit">Submit</button>
+        </form>
+    </div> -->
+
+
+</body>
+
+</html>
