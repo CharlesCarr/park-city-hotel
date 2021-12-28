@@ -1,3 +1,4 @@
+
 html, body {
     margin: 0;
     padding: 0;
@@ -542,7 +543,6 @@ input:focus::placeholder {
 
 }
 
-
 /* Commenting out for now */
 
 #flexHiddenMenu a {
@@ -576,3 +576,16 @@ input:focus::placeholder {
 
 
 
+/* RESPONSIVENESS */
+@media only screen and (max-width: 1000px) {
+    .nav-non-book {
+        display: none;
+    }
+    #topNavTags {
+        display: flex;
+        justify-content: flex-end !important;
+    }
+    #bookButton {
+        margin-right: 5%;
+    }
+}
