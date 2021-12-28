@@ -330,7 +330,7 @@ bookButton.addEventListener("click", function() {
 
 
 
-
+/*
 
 
 // NEW SECTION - for sidepanel to expand with mouseover or click to display more info/data
@@ -351,16 +351,16 @@ promoContainer.addEventListener('click', expandPromo);
 function expandPromo(e) {
     promoContainer.classList.add("expanded");
     promoContainer.style.animation = "none";
-    weatherContainer.style.animation = "none";
+    weatherContainer.style.display = "none";
     // promoContainer.style.pointer = "auto";
     promoContainer.innerHTML = '<a href="#">Promo 1</a><br><a href="#">Promo 2</a><br><a href="#">Promo 3</a>';
 
     /* Found below on Stack Overflow for allowing two events on same element
-        to work after one another */
+        to work after one another 
     e.stopImmediatePropagation();
     this.removeEventListener("click", expandPromo);
     /* closes expand with any click to the document (prob should make an exception 
-        for clicking on an a tag for promos) */
+        for clicking on an a tag for promos) 
     document.onclick = closeExpand;
 }
 
@@ -380,7 +380,7 @@ function closeExpand() {
 
 function expandWeather(e) {
     weatherContainer.classList.add("expanded");
-    promoContainer.style.animation = "none";
+    promoContainer.style.display = "none";
     weatherContainer.style.animation = "none";
     // weatherContainer.innerHTML = '<a href="#">Promo 1</a><br><a href="#">Promo 2</a><br><a href="#">Promo 3</a>';
     weatherAPIexpanded();
@@ -398,6 +398,7 @@ function closeWeather() {
     fetchResults();
     weatherContainer.addEventListener('click', expandWeather);
 }
+*/
 
 
 

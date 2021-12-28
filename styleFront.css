@@ -65,7 +65,9 @@ html, body {
 }
 
 .expanded {
-    height: 140px;
+    height: 275px;
+    width: 200px;
+    margin-right: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,12 +210,13 @@ nav li a {
     padding: 3%;
     z-index: 99;
 
-    transition: background-color 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 #bookButton:hover {
     background-color: #001732;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 /* main {
@@ -339,7 +342,7 @@ Will start making edits on class names to this below */
 }
 
 #small-images {
-    height: 600px;
+    height: 550px;
     width: 1200px;
     /* background-color: white; */
     display: flex;
@@ -405,6 +408,9 @@ Will start making edits on class names to this below */
     /* margin: 1%; */
     object-fit: cover;
     filter: brightness(70%);
+    cursor: pointer;
+    border-radius: 5%;
+    transition: all ease-in-out 250ms
 }
 
 .bottom-images:hover {
