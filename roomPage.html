@@ -1,67 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleRooms.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleRooms.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Mulish&family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuqwuTv1S5PXJDNCxxzXUW_aaNU0ncuhM&callback=initMap"
+    ></script>
     <!-- <script type="module" src="appRooms.js" defer></script> -->
     <script src="frontPage.js" defer></script>
     <script src="appRooms.js" defer></script>
-    
+    <title>PCH - Suites</title>
+  </head>
 
-    <title>Document</title>
-</head>
-<body>
-    <div id="backButton"><button>Back</button></div>
 
-    <div id="datesDisplay"></div>
-
+  <body>
     <div id="fullContainer">
 
-        <div id="room-container-one">
 
-            <div id="topFlex-one">
-                <div class="title-rooms">
-                    <p>Suite #1</p>
-                    <button class="bookButton" id="button-one">Book Now</button>
-                </div>
-    
-                <div class="image" id="img-one">
-                    <img src="./hotelroomBigger.jpeg">
-                </div>
-            </div>
-            
-            
-            <div class="description">
-                <p class="description-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis omnis, quo nihil optio eligendi temporibus amet molestiae ex nam atque molestias numquam alias vitae aliquid maiores voluptas hic dicta!</p>
-            </div>
-
+      <div id="top">
+        <!-- <div id="backButton">
+          <button>Back</button>
+        </div> -->
+        <div id="title">
+          <h1><a href="./frontPage.html">Park City Hotel</a></h1>
         </div>
+      </div>
 
+      <div id="bottom">
+        <div id="half-one">
+          <div id="room-container-one">
+            <div id="topFlex-one">
+              <div class="title-rooms">
+                <p>Suite #1</p>
+                <button class="bookButton" id="button-one">Book Now</button>
+              </div>
+
+              <div class="image" id="img-one">
+                <img src="./hotelroomBigger.jpeg" />
+              </div>
+            </div>
+
+            <div class="description">
+              <p class="description-para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam officiis omnis, quo nihil optio eligendi temporibus
+                amet molestiae ex nam atque molestias numquam alias vitae
+                aliquid maiores voluptas hic dicta!
+              </p>
+            </div>
+          </div>
+        </div>
         <!-- <div id="divider">
             <hr class="solid">
         </div> -->
 
-        <div id="room-container-two">
-
+        <div id="half-two">
+          <div id="room-container-two">
             <div id="topFlex-two">
-                <div class="title-rooms">
-                    <p>Suite #2</p>
-                    <button class="bookButton" id="button-two">Book Now</button>
-                </div>
-    
-                <div class="image" id="img-two">
-                    <img src="./hotelroomSmaller.jpeg">
-                </div>
+              <div class="title-rooms">
+                <p>Suite #2</p>
+                <button class="bookButton" id="button-two">Book Now</button>
+              </div>
+
+              <div class="image" id="img-two">
+                <img src="./hotelroomSmaller.jpeg" />
+              </div>
             </div>
-           
 
             <div class="description">
-                <p class="description-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro sunt assumenda atque ea molestias velit! Dignissimos praesentium doloremque rerum, neque perferendis ea obcaecati totam suscipit commodi, placeat non aut!</p>
+              <p class="description-para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident porro sunt assumenda atque ea molestias velit!
+                Dignissimos praesentium doloremque rerum, neque perferendis ea
+                obcaecati totam suscipit commodi, placeat non aut!
+              </p>
             </div>
-
+          </div>
         </div>
-
+      </div>
     </div>
-</body>
+  </body>
 </html>

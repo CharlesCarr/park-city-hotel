@@ -1,4 +1,3 @@
-
 html, body {
     margin: 0;
     padding: 0;
@@ -572,6 +571,15 @@ input:focus::placeholder {
     margin-right: 15px;
     margin-top: 15px;
 
+}
+
+
+#socials {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 

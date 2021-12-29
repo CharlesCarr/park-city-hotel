@@ -22,7 +22,7 @@ body {
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
-	width: 400px;
+	width: 35%;
 	max-width: 100%;
 }
 
@@ -58,6 +58,7 @@ body {
 	font-family: inherit;
 	font-size: 14px;
 	padding: 10px;
+	padding-right: 40px;
 	width: 100%;
 }
 
@@ -114,19 +115,47 @@ body {
 	padding: 10px;
 	margin-top: 20px;
 	width: 100%;
+	cursor: pointer;
 }
 
 #backButtonContainer {
 	position: absolute;
 	left: 2%;
 	top: 2%;
-	background-color: black;
-	color: white;
 	padding: 0.25% 0.33% 0.33% 0.25%;
+	
+}
+
+#backButton {
+	background-color: #01295c;
+	border: 2px solid white;
+	border-radius: 4px;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+	transition: all ease-in-out 250ms;
+	font-family: inherit;
+}
+
+#backButton:hover {
+	color: #01295c;
+	background-color: white;
 }
 
 form {
 	display: flex;
 	justify-content: center;
 	/* padding: 4%; */
+}
+
+#halfOne {
+	margin-right: 5%;
+}
+
+#halfTwo {
+	margin-left: 5%;
+}
+
+#state {
+	cursor: pointer;
 }
