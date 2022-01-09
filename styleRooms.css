@@ -1,153 +1,135 @@
-html, body {
-    padding: 0;
-    margin: 0;
-    /* height: 100vh; */
-    font-family:'Kanit', sans-serif;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Kanit", sans-serif;
 }
 
 #fullContainer {
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: center; */
-    /* height:100%; */
-    /* height: 80%; */
-    /* align-items: center; */
-    height: 100vh;
+  height: 100vh;
 }
 
 #top {
-    width: 100%;
-    height: 10%;
-    background-color: #01295c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 5px solid black;
+  width: 100%;
+  height: 10%;
+  background-color: #01295c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid black;
 }
 
 #bottom {
-    display: flex;
-    width: 100%;
-    height: 95%;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  width: 100%;
+  height: 95%;
+  margin: 0;
+  padding: 0;
 }
 
-
-
 #half-one {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #half-two {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 5%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5%;
 }
 
 .image {
-    margin: 1.5%;
+  margin: 1.5%;
 }
 
 #room-container-one,
 #room-container-two {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10%;
-    padding: 5%;
-    border: 2px solid black;
-    border-radius: 5%;
-    height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10%;
+  padding: 5%;
+  border: 2px solid black;
+  border-radius: 5%;
+  height: 80%;
 }
 
-#topFlex-one, 
+#topFlex-one,
 #topFlex-two {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .title-rooms {
-    align-self: center;
-    padding-right: 5%;
+  align-self: center;
+  padding-right: 5%;
 }
 
 .title-rooms p {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .description {
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    margin-left: 15%;
-    font-size: 0.90rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-left: 15%;
+  font-size: 0.9rem;
 }
 
 .description-para {
-    /* text-align: center; */
-    width: 70%;
+  width: 70%;
 }
 
-/* hr.solid {
-    border-top: 3px solid #bbb;
-
-} */
-
 #backButton {
-    width: 15%;
-    height: 15%;
-    position: absolute;
-    left: 5;
-    top: 5;
-    z-index: 99;
+  width: 15%;
+  height: 15%;
+  position: absolute;
+  left: 5;
+  top: 5;
+  z-index: 99;
 }
 
 #backButton button {
-    /* width: 15%; */
-    background-color: rgba(0,0,0, 0.7);
-    color: white;
-    /* margin-top: 3%; */
-    border: 2.5px solid #01295c;
-    border-radius: 5%;
-    text-align: center;
-    /* border-right-style: none; */
-    padding: 0.5%;
-    cursor: pointer;
-    margin-top: 0.5%;
-    margin-left: 0.5%;
-
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 2.5px solid #01295c;
+  border-radius: 5%;
+  text-align: center;
+  padding: 0.5%;
+  cursor: pointer;
+  margin-top: 0.5%;
+  margin-left: 0.5%;
 }
 
 .bookButton {
-    background-color: #01295c;
-	border: 2px solid #01295c;
-	border-radius: 5%;
-	color: #fff;
-	display: block;
-	font-family: inherit;
-	font-size: 16px;
-	padding: 10px;
-	margin-top: 20px;
-	width: 100%;
-	cursor: pointer;
+  background-color: #01295c;
+  border: 2px solid #01295c;
+  border-radius: 5%;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
 }
 
 #title a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
