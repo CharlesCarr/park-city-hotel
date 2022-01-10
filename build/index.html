@@ -1,84 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Mulish&family=Rampart+One&display=swap"
-      rel="stylesheet"
-    />
-    <script src="app.js" defer></script>
-    <title>Hotel Form</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <div id="backButtonContainer">
-        <button type="button" id="backButton">&#8592; Back</button>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f9e6e6396e.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="styleFront.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Mulish&family=Rampart+One&display=swap"
+        rel="stylesheet">
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuqwuTv1S5PXJDNCxxzXUW_aaNU0ncuhM&callback=initMap">
+    </script>
+     <script src="appFrontPage.js" defer></script>
+    <script src="appRooms.js" defer></script>
+    <title>Park City Hotel</title>
+</head>
 
-      <div class="header">
-        <h2>Guest Information</h2>
-      </div>
+<body>
 
-      <form id="guestInformationForm" class="form">
-        <div id="halfOne">
-          <div class="form-control">
-            <label for="fName">First Name</label>
-            <input type="text" placeholder="John" id="fName" />
-            <small>Error message</small>
-          </div>
-          <div class="form-control">
-            <label for="lName">Last Name</label>
-            <input type="text" placeholder="Smith" id="lName" />
-            <small>Error message</small>
-          </div>
-          <div class="form-control">
-            <label for="email">Email</label>
-            <input type="text" placeholder="john@smith.com" id="email" />
-            <small>Error message</small>
-          </div>
-          <div class="form-control">
-            <label for="phone">Phone</label>
-            <input type="tel" placeholder="(XXX) XXX-XXXX" id="phone" />
-            <small>Error message</small>
-          </div>
+    <div id="fullContainer">
+
+        <div id="contentWrap">
+            <header>
+                <div class="flexContainer">
+                    <div id="flexOne">
+                        <h1 id="logoText">Park City Hotel</h1>
+                    </div>
+                    <div id="flexTwo">
+                        <nav>
+                            <ul id="topNavTags">
+                                <li class="topNavTag nav-non-book" id='stayNav'><a href="#">Stay</a>
+                                    <ul class="subNav">
+                                        <li><a href='#'>One</a></li>
+                                        <li><a href='#'>Two</a></li>
+                                        <li><a href='#'>Three</a></li>
+                                        <li><a href='#'>Four</a></li>
+                                    </ul></li>
+                                <li class="topNavTag nav-non-book"><a href="#">Dine</a>
+                                    <ul class="subNav">
+                                        <li><a href='#'>One</a></li>
+                                        <li><a href='#'>Two</a></li>
+                                        <li><a href='#'>Three</a></li>
+                                        <li><a href='#'>Four</a></li>
+                                    </ul></li>
+                                <li class="topNavTag nav-non-book"><a href="#">Experience</a>
+                                    <ul class="subNav">
+                                        <li><a href='#'>One</a></li>
+                                        <li><a href='#'>Two</a></li>
+                                        <li><a href='#'>Three</a></li>
+                                        <li><a href='#'>Four</a></li>
+                                    </ul></li>
+                                <li class="topNavTag nav-non-book"><a href="#">Explore</a>
+                                    <ul class="subNav">
+                                        <li><a href='#'>One</a></li>
+                                        <li><a href='#'>Two</a></li>
+                                        <li><a href='#'>Three</a></li>
+                                        <li><a href='#'>Four</a></li>
+                                    </ul></li>
+                                <li class="topNavTag nav-non-book"><a href="#">Celebrate</a>
+                                    <ul class="subNav">
+                                        <li><a href='#'>One</a></li>
+                                        <li><a href='#'>Two</a></li>
+                                        <li><a href='#'>Three</a></li>
+                                        <li><a href='#'>Four</a></li>
+                                    </ul></li>
+                                <li class="topNavTag nav-non-book"><a href="#">Learn</a>
+                                    <ul class="subNav">
+                                        <li><a href='#'>One</a></li>
+                                        <li><a href='#'>Two</a></li>
+                                        <li><a href='#'>Three</a></li>
+                                        <li><a href='#'>Four</a></li>
+                                    </ul></li>
+                                <li class="topNavTag" id="bookButton">Book Now</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div id="large-image-display"> 
+                    <ul>
+                        <li class="slide active" id="slide-one">
+                            <img src="./images/firePitImage.jpeg" alt="Fire pit">
+                        </li>
+                        <li class="slide" id="slide-two">
+                            <img src="./images/skiingImage.jpeg" alt="Skiier">
+                        </li>
+                        <li class="slide" id="slide-three">
+                            <img src="./images/mainStreetSnow.jpeg" alt="Main Street">
+                        </li>
+                        <li class="slide" id="slide-four">
+                            <img src="./images/viceroy-snowmass-pool.jpg.1200x800_q85.jpg" alt="Pool">
+                        </li>
+                    </ul>
+                   
+
+                    <div id="reservation-box">
+                        <p>Make a Reservation</p>
+                        <form id="smallForm" action="roomPage.html" method="GET">
+                            <label for="checkIn">Check In:</label><br>
+                            <input type="text" id="checkInDate" name="checkInDate" placeholder="(MM/DD/YYYY)"><br>
+                            <label for="checkOut">Check Out:</label><br>
+                            <input type="text" id="checkOutDate" name="checkOutDate" placeholder="(MM/DD/YYYY)"><br>
+                            <input type="submit" value="Book Now" id='submit'>
+                        </form>
+                    </div>
+
+                    <div id="sidePanel">
+                        <div id="weather-display">
+                            <h3>Current Temp = XY°F <br>(Park City, Utah)</h3>
+                        </div>
+
+                        <div id="topAd">
+                            <h3><a href="#" id="promo">Promotions</a></h3>
+                        </div>
+                    </div>
+
+                
+                    <div id="buttons">
+                        <button class="button" id="btn-one">&#10052;</button>
+                        <button class="button" id="btn-two">&#10052;</button>
+                        <button class="button" id="btn-three">&#10052;</button>
+                        <button class="button" id="btn-four">&#10052;</button>
+                    </div>
+
+                </div>
+
+            
+                <div id="information">
+                    <p>Park City Hotel is a fictional hotel in Park City, Utah that I made up for the purpose of
+                        creating a website for a hotel.
+                        In this site, I have focused on key elements including responsive navigation, time intervals,
+                        fetching relevant data from APIs,
+                        and client-side form validation.
+                    </p>
+                </div>
+
+                <div id="small-image-grid">
+                    <div id="small-images">
+                    
+
+                        <div id='img-half-left'>
+                            <img class='bottom-images' src="./images/welcomeToParkCity.jpeg" alt="Welcome to Park City"></img>
+                
+
+                        </div>
+
+                        <div id='img-half-right'>
+                            <div id='right-top-img'>
+                                <img class='bottom-images' src="./images/skiHotelRoom.jpeg" alt="Hotel Room"></img>
+
+                            </div>
+
+                            <div id='right-bottom-img'>
+                                <div id='right-bottom-img-left'>
+                                    
+                                    <img class='bottom-images' src="./images/sundanceFilm.jpeg" alt="Sundance Film Festival"></img>
+                                </div>
+                                <div id='right-bottom-img-right'>
+                                    
+                                    <img class='bottom-images' src="./images/skiSnowboard.jpeg" alt="Ski & Snowboard"></img>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </main>
         </div>
 
-        <div id="halfTwo">
-          <div class="form-control">
-            <label for="address">Address</label>
-            <input type="text" placeholder="" id="address" />
-            <small>Error message</small>
-          </div>
-          <div class="form-control">
-            <label for="address-two">Address 2 <em>(Optional)</em></label>
-            <input type="text" placeholder="" id="address-two" />
-            <small>Error message</small>
-          </div>
-          <div class="form-control">
-            <label for="zip">Zip</label>
-            <input type="text" placeholder="" id="zip" />
-            <small>Error message</small>
-          </div>
-          <div class="form-control">
-            <label for="city">City</label>
-            <input type="text" placeholder="" id="city" />
-            <small>Error message</small>
-          </div>
-          <div class="form-control">
-            <select name="state" id="state">
-              State
-              <option id="stateOption">Select State</option>
-            </select>
-            <small id="errorState">Error message</small>
-          </div>
-          <button>Submit</button>
-        </div>
-      </form>
+        <footer id="footer">
+
+            <div class="footers" id="map">
+                
+            </div>
+
+            <div class="footers" id="contactInfo">
+                <p>Park City Hotel</p>
+                <p>Address:</p>
+                <p>1 Park Drive</p>
+                <p>Park City, Utah</p>
+                <p>84060</p>
+                <p>Telephone: (123) 456 1234</p>
+            </div>
+
+            <div class="footers" id="social">
+                <p>Connect with Us</p>
+                <ul id='socials'>
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-twitter-square"></i></li>
+                    <li><i class="fab fa-instagram-square"></i></li>
+                    <li><i class="fab fa-tiktok"></i></li>
+                </ul>
+                <p>Newsletter Sign Up</p>
+                <p>Email: info@parkcityhotel.com</p>
+            </div>
+
+        </footer>
+
     </div>
-  </body>
+
+   
+</body>
+
 </html>
