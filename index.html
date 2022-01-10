@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Mulish&family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js" defer></script>
+    <title>Hotel Form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="backButtonContainer">
+        <button type="button" id="backButton">&#8592; Back</button>
+      </div>
+
+      <div class="header">
+        <h2>Guest Information</h2>
+      </div>
+
+      <form id="guestInformationForm" class="form">
+        <div id="halfOne">
+          <div class="form-control">
+            <label for="fName">First Name</label>
+            <input type="text" placeholder="John" id="fName" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="lName">Last Name</label>
+            <input type="text" placeholder="Smith" id="lName" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" placeholder="john@smith.com" id="email" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="phone">Phone</label>
+            <input type="tel" placeholder="(XXX) XXX-XXXX" id="phone" />
+            <small>Error message</small>
+          </div>
+        </div>
+
+        <div id="halfTwo">
+          <div class="form-control">
+            <label for="address">Address</label>
+            <input type="text" placeholder="" id="address" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="address-two">Address 2 <em>(Optional)</em></label>
+            <input type="text" placeholder="" id="address-two" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="zip">Zip</label>
+            <input type="text" placeholder="" id="zip" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="city">City</label>
+            <input type="text" placeholder="" id="city" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <select name="state" id="state">
+              State
+              <option id="stateOption">Select State</option>
+            </select>
+            <small id="errorState">Error message</small>
+          </div>
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
