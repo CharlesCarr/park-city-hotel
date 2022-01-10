@@ -1,0 +1,23 @@
+{
+  "name": "hotelform",
+  "version": "1.0.0",
+  "description": "Built a website for a fictional hotel in Park City, Utah with HTML, CSS, and Vanilla JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlesCarr/park-city-hotel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlesCarr/park-city-hotel/issues"
+  },
+  "homepage": "https://charlescarr.github.io/park-city-hotel",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
