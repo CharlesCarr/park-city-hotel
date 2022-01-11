@@ -18,7 +18,7 @@ const cityId = 5779451;
 
 function fetchResults() {
   // Assemble the full URL
-  let url = `http://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${apiKey}`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${apiKey}`;
 
   // Use fetch() to make the request to the API
   // fetch(url)
@@ -36,7 +36,7 @@ function fetchResults() {
     .then((data) => {
       let tempK = data.main.temp;
       let tempF = Math.round((tempK - 273.15) * (9 / 5) + 32);
-      console.log(tempF);
+      // console.log(tempF);
       weatherDisplay.innerHTML = `Current Temp: ${tempF}°F <br> (Park City)`;
     })
     .catch(console.err);
@@ -73,7 +73,7 @@ function initMap() {
   const marker = new google.maps.Marker({
     position: { lat: 40.646061, lng: -111.497971 },
     map: map,
-    icon: "./3440906_map_marker_navigation_pin_icon (1).png",
+    icon: "./images/3440906_map_marker_navigation_pin_icon (1).png",
   });
 }
 

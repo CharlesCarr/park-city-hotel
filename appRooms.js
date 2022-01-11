@@ -10,10 +10,10 @@ backButton.addEventListener("click", goToFrontPage);
 
 function goToBook() {
   // index.html is the new page that I want the user to be redirected to
-  document.location = "index.html";
+  document.location = "bookingPage.html";
 }
 
 function goToFrontPage() {
   // index.html is the new page that I want the user to be redirected to
-  document.location = "frontPage.html";
+  document.location = "index.html";
 }
